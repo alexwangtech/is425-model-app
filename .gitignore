@@ -1,0 +1,6 @@
+model/.ipynb_checkpoints
+model/cardio_train.csv
+model/Testing ML Models.ipynb
+model/random-forest-heart-disease-model.sav
+
+node_modules
