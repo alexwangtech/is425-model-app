@@ -4,11 +4,11 @@ const port = 3000;
 
 app.get('/', (req, res) => {
     const { spawn } = require('child_process');
-    // const pythonProcess = spawn('python', ['model/test.py', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
+    // const pythonProcess = spawn('python3', ['model/test.py', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
 
     console.dir(req.query);
 
-    const pythonProcess = spawn('python', ['model/execute-model.py',
+    const pythonProcess = spawn('python3', ['model/execute-model.py',
         req.query.age,
         req.query.height,
         req.query.weight,
