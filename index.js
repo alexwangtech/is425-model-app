@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 
     console.dir(req.query);
 
-    const pythonProcess = spawn('python3', ['model/execute-model.py',
+    const pythonProcess = spawn('python', ['model/execute-model.py',
         req.query.age,
         req.query.height,
         req.query.weight,
